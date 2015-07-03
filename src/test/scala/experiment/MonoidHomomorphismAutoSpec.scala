@@ -6,6 +6,9 @@ import org.scalatest.prop.Checkers
 
 /**
  * A template test class that checks if given monoid homomorphism is satisfied for given monoids.
+ *
+ * A monoid homomorphism is a function A=>B that says N.op(f(a), f(b)) == f(M.op(a, b)) for monoids M[A] and N[B].
+ *
  * @author Emre Çelikten
  * @date   03/07/2015-23:47
  */
