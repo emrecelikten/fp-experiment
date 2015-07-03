@@ -18,4 +18,4 @@ project/target/
 .worksheet
 
 # IntelliJ IDEA specific
-.idea
+.idea/
