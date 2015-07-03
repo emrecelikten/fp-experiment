@@ -9,7 +9,7 @@ import org.scalatest.prop.Checkers
  * @author Emre Çelikten
  * @date   03/07/2015-22:54
  */
-class IntAdditionMonoidSpec extends {
+class IntAdditionMonoidAutoSpec extends {
   override val monoid: Monoid[Int] = new Monoid[Int] {
     override def op(a1: Int, a2: Int): Int = a1 + a2
 
@@ -17,4 +17,4 @@ class IntAdditionMonoidSpec extends {
   }
 
   override val name: String = "IntAdditionMonoid"
-} with MonoidSpec[Int]
+} with MonoidAutoSpec[Int]

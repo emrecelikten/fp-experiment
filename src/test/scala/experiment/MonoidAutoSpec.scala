@@ -6,10 +6,11 @@ import org.scalatest.prop.Checkers
 
 /**
  * A template test class that can be used to check if concrete instances of monoids satisfy monoid properties.
+ *
  * @author Emre Çelikten
  * @date   03/07/2015-22:59
  */
-abstract class MonoidSpec[T : Arbitrary] extends FlatSpec with Checkers with Matchers {
+abstract class MonoidAutoSpec[T : Arbitrary] extends FlatSpec with Checkers with Matchers {
   val monoid: Monoid[T]
   val name: String
 
